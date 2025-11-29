@@ -1,26 +1,100 @@
 @import "tailwindcss";
 
+/* -------------------------------------------------------- */
+/* Root Variables */
+/* -------------------------------------------------------- */
 :root {
+  --font-main: 'KinoCustom', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #333;
+
+  --gray: #7a7a7a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-main);
+
+  --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
+ 
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111111;
+    --foreground: #ececec;
   }
 }
 
+/* -------------------------------------------------------- */
+/* Body — using your small typography scale */
+/* -------------------------------------------------------- */
 body {
-  background: var(--background);
+  margin: 0;
+  min-height: 100%;
+
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+
+  font-family: var(--font-main);
+  font-size: 14px;      /* base small typography */
+  line-height: 20px;    /* matches h5/p scale */
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* -------------------------------------------------------- */
+/* Headings — apply your requested scale */
+/* -------------------------------------------------------- */
+
+/* Shared heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  
+}
+
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 20px;
+}
+
+
+
+/* Optional: Add this to your global CSS (styles/globals.css) */
+@keyframes slideInBackground {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero-image {
+  animation: slideInBackground 1s ease-out forwards;
+}
+
+/* Hide scrollbar for all browsers */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
