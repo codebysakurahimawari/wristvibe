@@ -22,7 +22,7 @@ export default function Footer() {
                     "'KinoCustom', 'Helvetica Neue', Arial, sans-serif",
                 }}
               >
-                LumaCraft
+                WristVibes
               </span>
             </div>
             <p className="text-[#666666] text-[11px] md:text-sm leading-relaxed">
@@ -168,7 +168,7 @@ export default function Footer() {
         {/* Bottom section */}
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3">
           <p className="text-[#666666] text-[10px] md:text-sm">
-            COPYRIGHT 2025 — LUMACRAFT
+            COPYRIGHT 2025 — WristVibes
           </p>
           <div className="flex gap-4">
             <Link

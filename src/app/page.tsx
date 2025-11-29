@@ -297,7 +297,7 @@ export default function Home() {
           <div className='max-w-xl mx-auto text-center mt-5'>
             <h4 className="text-xl !font-medium text-white">Collects no data — video, photo, analytics or otherwise.</h4>
             <p className="text-base  text-[#afa39b] !leading-snug ">
-              We believe a camera app should work just like the ones they filmed the classics on: private and free of any analytics and data mining.
+              Your Apple Watch deserves the same privacy you expect from your most personal device. WristVibe is built with a simple belief: your data stays yours. No tracking. No analytics. No hidden collection — ever.
             </p>
           </div>
 
@@ -306,7 +306,7 @@ export default function Home() {
         <section className="py-16  md:py-24 xl:py-32 flex flex-col items-center max-w-5xl mx-auto justify-center w-full relative z-10 bg-black backdrop-blur-2xl">
 
           <SectionTitle
-            heading="Unbox your Kino Pro Video Camera today!"
+            heading="Explore WristVibe Today"
             description=""
             headingAlignment="center"
             descriptionAlignment="center"
@@ -314,28 +314,27 @@ export default function Home() {
             descriptionFontSize="secondary"
             headingFontWeight="font-semibold"
             descriptionFontWeight="font-normal"
-            headingMaxWidth="4xl"
+            headingMaxWidth="5xl"
             descriptionMaxWidth="4xl"
             headingFontColor="text-[#afa39b]"
             descriptionFontColor="text-[#afa39b]"
           />
 
 
-          <div className='max-w-xl mx-auto text-center'>
-            <h4 className="text-xl !font-medium text-white">Available now on the App Store</h4>
-            <p className="text-sm   text-[#afa39b] !leading-snug ">
-              iOS 17 required
-            </p>
-          </div>
 
-          <div className="h-[300px]  border-2 border-dashed border-white/12 overflow-hidden p-2 rounded-3xl mt-12">
+
+          <div className="h-[500px] w-full border-2 border-dashed border-white/12 overflow-hidden p-2 rounded-3xl mt-6 col-span-2 my-8">
             <Image
-              src="/cards-images/giftbox.png"
-              alt="Apple Watch Pro Features"
-              width={250}
-              height={200}
-              className="h-full w-full object-cover rounded-2xl"
-            />
+              src="/cards-images/watch-ultra-3.png"
+              width={950}
+              height={400}
+              className="h-full w-full object-cover rounded-2xl" alt={''} />
+          </div>
+          <div className='max-w-7xl mx-auto text-center'>
+            <h4 className="text-xl !font-medium text-white">Available Now for Apple Watch Users</h4>
+            <p className="text-sm   text-[#afa39b] !leading-snug ">
+              Dive into a new way to customize, upgrade, and style your Apple Watch — privately and effortlessly.
+            </p>
           </div>
 
         </section>

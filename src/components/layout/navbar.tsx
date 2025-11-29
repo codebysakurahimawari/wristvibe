@@ -40,7 +40,7 @@ export default function Navbar() {
           `}
         >
           <Link href="/" className="text-base font-semibold tracking-tight mr-2" style={{ fontFamily: "'KinoCustom', 'Helvetica Neue', Arial, sans-serif" }}>
-            LumaCraft
+          WristVibes
           </Link>
           <ul className="flex-1 flex justify-center items-center gap-1">
             {links.map(link => (
